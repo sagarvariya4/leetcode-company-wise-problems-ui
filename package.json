@@ -1,0 +1,163 @@
+{
+	"name": "leetcode-company-wise-problems-ui",
+	"version": "0.1.0",
+	"private": true,
+	"author": "Sagar Variya",
+	"keywords": [
+		"leetcode",
+		"company",
+		"problems"
+	],
+	"license": "UNLICENSED",
+	"engines": {
+		"node": ">=22.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sagarvariya4/leetcode-company-wise-problems-ui.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sagarvariya4/leetcode-company-wise-problems-ui/issues"
+	},
+	"homepage": "https://github.com/sagarvariya4/leetcode-company-wise-problems-ui#readme",
+	"scripts": {
+		"dev": "next dev",
+		"dev:turbopack": "next dev --turbopack",
+		"dev:https": "next dev --experimental-https",
+		"build": "next build",
+		"build:debug": "next build --debug-prerender",
+		"build:gh": "cross-env GITHUB_PAGES=true next build",
+		"start": "npx serve out",
+		"lint": "eslint . --fix",
+		"lint:check": "eslint .",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"check:up": "npm run format:check && npm run lint:check && npm run build:debug",
+		"check:fix": "npm run format && npm run lint && npm run build",
+		"prepare": "husky",
+		"release": "release-it"
+	},
+	"dependencies": {
+		"@base-ui/react": "^1.6.0",
+		"@vercel/analytics": "^2.0.1",
+		"@vercel/speed-insights": "^2.0.0",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^1.24.0",
+		"next": "16.2.10",
+		"next-themes": "^0.4.6",
+		"nuqs": "^2.9.0",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"shadcn": "^4.13.0",
+		"sonner": "^2.0.7",
+		"tailwind-merge": "^3.6.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^21.0.0",
+		"@commitlint/config-conventional": "^21.0.0",
+		"@ianvs/prettier-plugin-sort-imports": "^4.5.1",
+		"@release-it/conventional-changelog": "^11.0.0",
+		"@tailwindcss/postcss": "^4",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"babel-plugin-react-compiler": "1.0.0",
+		"commitizen": "^4.3.1",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^9.39.4",
+		"eslint-config-next": "16.2.6",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.5",
+		"eslint-plugin-unused-imports": "^4.4.1",
+		"husky": "^9.1.7",
+		"lint-staged": "^17.0.3",
+		"prettier": "^3.6.2",
+		"prettier-plugin-tailwindcss": "^0.6.14",
+		"release-it": "^20.0.1",
+		"tailwindcss": "^4.1.11",
+		"tw-animate-css": "^1.3.6",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.38.0"
+	},
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"eslint --fix"
+		],
+		"**/*": [
+			"prettier --write --ignore-unknown"
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"release-it": {
+		"$schema": "https://unpkg.com/release-it/schema/release-it.json",
+		"git": {
+			"commitMessage": "chore: release v${version}",
+			"tagName": "v${version}"
+		},
+		"github": {
+			"release": true
+		},
+		"npm": {
+			"publish": false
+		},
+		"plugins": {
+			"@release-it/conventional-changelog": {
+				"infile": "CHANGELOG.md",
+				"preset": {
+					"name": "conventionalcommits",
+					"types": [
+						{
+							"type": "feat",
+							"section": "Features"
+						},
+						{
+							"type": "fix",
+							"section": "Bug Fixes"
+						},
+						{
+							"type": "refactor",
+							"section": "Refactors"
+						},
+						{
+							"type": "docs",
+							"section": "Documentation"
+						},
+						{
+							"type": "test",
+							"section": "Tests"
+						},
+						{
+							"type": "chore",
+							"section": "Chores"
+						},
+						{
+							"type": "ci",
+							"section": "Continuous Integration"
+						},
+						{
+							"type": "revert",
+							"section": "Reverts"
+						},
+						{
+							"type": "style",
+							"section": "Styles"
+						},
+						{
+							"type": "perf",
+							"section": "Performance Improvements"
+						},
+						{
+							"type": "build",
+							"section": "Build System"
+						}
+					]
+				}
+			}
+		}
+	}
+}

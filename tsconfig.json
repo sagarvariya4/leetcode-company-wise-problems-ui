@@ -1,0 +1,39 @@
+{
+	"$schema": "https://www.schemastore.org/tsconfig.json",
+	"compilerOptions": {
+		"target": "ESNext", // Changed from ES2017 to leverage modern JS features in React 19
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"forceConsistentCasingInFileNames": true, // Recommended for cross-platform dev
+		"checkJs": false // Keep false if you have a lot of legacy JS files
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"src/**/*.css",
+		".next/dev/types/**/*.ts",
+		"out/types/**/*.ts",
+		"out/dev/types/**/*.ts"
+	],
+	"exclude": ["node_modules"]
+}

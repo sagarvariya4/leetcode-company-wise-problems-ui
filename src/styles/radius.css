@@ -1,0 +1,13 @@
+/* --- RADIUS --- */
+[data-radius='none'] {
+	--radius: 0;
+}
+[data-radius='small'] {
+	--radius: 0.3rem;
+}
+[data-radius='medium'] {
+	--radius: 0.5rem;
+}
+[data-radius='large'] {
+	--radius: 0.75rem;
+}

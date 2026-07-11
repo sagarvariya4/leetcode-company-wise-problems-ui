@@ -1,0 +1,30 @@
+/* --- MENU ACCENT --- */
+/* "Subtle" is the default behavior. "Bold" injects the primary color into hover/active states */
+[data-menu-accent='bold'] .cn-menu-target {
+	--sidebar-accent: var(--primary);
+	--sidebar-accent-foreground: var(--primary-foreground);
+
+	/* Also override standard accents just in case it's a Navbar instead of a Sidebar */
+	--accent: var(--primary);
+	--accent-foreground: var(--primary-foreground);
+}
+
+/* --- MENU APPEARANCE --- */
+/* "Solid" is the default behavior. "Translucent" applies glassmorphism */
+[data-menu-color='translucent'] .cn-menu-target,
+[data-menu-color='inverted-translucent'] .cn-menu-target {
+	/* We use color-mix to make the background 80% opaque */
+	--sidebar-background: color-mix(
+		in oklab,
+		var(--background) 80%,
+		transparent
+	) !important;
+	background-color: color-mix(
+		in oklab,
+		var(--background) 80%,
+		transparent
+	) !important;
+
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}

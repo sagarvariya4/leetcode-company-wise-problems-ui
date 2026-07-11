@@ -1,0 +1,211 @@
+/* --- GOOGLE FONTS IMPORTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400&display=swap');
+
+/* --- FONTS --- */
+[data-font='geist'] {
+	--font-sans: 'Geist', sans-serif;
+	--font-mono: 'Geist', sans-serif;
+}
+[data-font-heading='geist'] {
+	--font-heading: 'Geist', sans-serif;
+}
+[data-font='inter'] {
+	--font-sans: 'Inter', sans-serif;
+	--font-mono: 'Inter', sans-serif;
+}
+[data-font-heading='inter'] {
+	--font-heading: 'Inter', sans-serif;
+}
+[data-font='noto-sans'] {
+	--font-sans: 'Noto Sans', sans-serif;
+	--font-mono: 'Noto Sans', sans-serif;
+}
+[data-font-heading='noto-sans'] {
+	--font-heading: 'Noto Sans', sans-serif;
+}
+[data-font='nunito-sans'] {
+	--font-sans: 'Nunito Sans', sans-serif;
+	--font-mono: 'Nunito Sans', sans-serif;
+}
+[data-font-heading='nunito-sans'] {
+	--font-heading: 'Nunito Sans', sans-serif;
+}
+[data-font='figtree'] {
+	--font-sans: 'Figtree', sans-serif;
+	--font-mono: 'Figtree', sans-serif;
+}
+[data-font-heading='figtree'] {
+	--font-heading: 'Figtree', sans-serif;
+}
+[data-font='roboto'] {
+	--font-sans: 'Roboto', sans-serif;
+	--font-mono: 'Roboto', sans-serif;
+}
+[data-font-heading='roboto'] {
+	--font-heading: 'Roboto', sans-serif;
+}
+[data-font='raleway'] {
+	--font-sans: 'Raleway', sans-serif;
+	--font-mono: 'Raleway', sans-serif;
+}
+[data-font-heading='raleway'] {
+	--font-heading: 'Raleway', sans-serif;
+}
+[data-font='dm-sans'] {
+	--font-sans: 'DM Sans', sans-serif;
+	--font-mono: 'DM Sans', sans-serif;
+}
+[data-font-heading='dm-sans'] {
+	--font-heading: 'DM Sans', sans-serif;
+}
+[data-font='public-sans'] {
+	--font-sans: 'Public Sans', sans-serif;
+	--font-mono: 'Public Sans', sans-serif;
+}
+[data-font-heading='public-sans'] {
+	--font-heading: 'Public Sans', sans-serif;
+}
+[data-font='outfit'] {
+	--font-sans: 'Outfit', sans-serif;
+	--font-mono: 'Outfit', sans-serif;
+}
+[data-font-heading='outfit'] {
+	--font-heading: 'Outfit', sans-serif;
+}
+[data-font='oxanium'] {
+	--font-sans: 'Oxanium', sans-serif;
+	--font-mono: 'Oxanium', sans-serif;
+}
+[data-font-heading='oxanium'] {
+	--font-heading: 'Oxanium', sans-serif;
+}
+[data-font='manrope'] {
+	--font-sans: 'Manrope', sans-serif;
+	--font-mono: 'Manrope', sans-serif;
+}
+[data-font-heading='manrope'] {
+	--font-heading: 'Manrope', sans-serif;
+}
+[data-font='space-grotesk'] {
+	--font-sans: 'Space Grotesk', sans-serif;
+	--font-mono: 'Space Grotesk', sans-serif;
+}
+[data-font-heading='space-grotesk'] {
+	--font-heading: 'Space Grotesk', sans-serif;
+}
+[data-font='montserrat'] {
+	--font-sans: 'Montserrat', sans-serif;
+	--font-mono: 'Montserrat', sans-serif;
+}
+[data-font-heading='montserrat'] {
+	--font-heading: 'Montserrat', sans-serif;
+}
+[data-font='ibm-plex-sans'] {
+	--font-sans: 'IBM Plex Sans', sans-serif;
+	--font-mono: 'IBM Plex Sans', sans-serif;
+}
+[data-font-heading='ibm-plex-sans'] {
+	--font-heading: 'IBM Plex Sans', sans-serif;
+}
+[data-font='source-sans-3'] {
+	--font-sans: 'Source Sans 3', sans-serif;
+	--font-mono: 'Source Sans 3', sans-serif;
+}
+[data-font-heading='source-sans-3'] {
+	--font-heading: 'Source Sans 3', sans-serif;
+}
+[data-font='instrument-sans'] {
+	--font-sans: 'Instrument Sans', sans-serif;
+	--font-mono: 'Instrument Sans', sans-serif;
+}
+[data-font-heading='instrument-sans'] {
+	--font-heading: 'Instrument Sans', sans-serif;
+}
+[data-font='jetbrains-mono'] {
+	--font-sans: 'JetBrains Mono', monospace;
+	--font-mono: 'JetBrains Mono', monospace;
+}
+[data-font-heading='jetbrains-mono'] {
+	--font-heading: 'JetBrains Mono', monospace;
+}
+[data-font='geist-mono'] {
+	--font-sans: 'Geist Mono', monospace;
+	--font-mono: 'Geist Mono', monospace;
+}
+[data-font-heading='geist-mono'] {
+	--font-heading: 'Geist Mono', monospace;
+}
+[data-font='noto-serif'] {
+	--font-sans: 'Noto Serif', serif;
+	--font-mono: 'Noto Serif', serif;
+}
+[data-font-heading='noto-serif'] {
+	--font-heading: 'Noto Serif', serif;
+}
+[data-font='roboto-slab'] {
+	--font-sans: 'Roboto Slab', serif;
+	--font-mono: 'Roboto Slab', serif;
+}
+[data-font-heading='roboto-slab'] {
+	--font-heading: 'Roboto Slab', serif;
+}
+[data-font='merriweather'] {
+	--font-sans: 'Merriweather', serif;
+	--font-mono: 'Merriweather', serif;
+}
+[data-font-heading='merriweather'] {
+	--font-heading: 'Merriweather', serif;
+}
+[data-font='lora'] {
+	--font-sans: 'Lora', serif;
+	--font-mono: 'Lora', serif;
+}
+[data-font-heading='lora'] {
+	--font-heading: 'Lora', serif;
+}
+[data-font='playfair-display'] {
+	--font-sans: 'Playfair Display', serif;
+	--font-mono: 'Playfair Display', serif;
+}
+[data-font-heading='playfair-display'] {
+	--font-heading: 'Playfair Display', serif;
+}
+[data-font='eb-garamond'] {
+	--font-sans: 'EB Garamond', serif;
+	--font-mono: 'EB Garamond', serif;
+}
+[data-font-heading='eb-garamond'] {
+	--font-heading: 'EB Garamond', serif;
+}
+[data-font='instrument-serif'] {
+	--font-sans: 'Instrument Serif', serif;
+	--font-mono: 'Instrument Serif', serif;
+}
+[data-font-heading='instrument-serif'] {
+	--font-heading: 'Instrument Serif', serif;
+}
