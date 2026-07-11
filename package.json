@@ -12,7 +12,7 @@
 	"engines": {
 		"node": ">=22.0.0"
 	},
-	"packageManager": "pnpm@10",
+	"packageManager": "pnpm@10.13.1",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sagarvariya4/leetcode-company-wise-problems-ui.git"
@@ -52,7 +52,8 @@
 		"react-dom": "19.2.4",
 		"shadcn": "^4.13.0",
 		"sonner": "^2.0.7",
-		"tailwind-merge": "^3.6.0"
+		"tailwind-merge": "^3.6.0",
+		"zod": "^4.4.3"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^21.0.0",
