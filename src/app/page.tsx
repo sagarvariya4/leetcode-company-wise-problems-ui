@@ -1,72 +1,176 @@
 'use client';
 
-import Image from 'next/image';
+import { useMemo, useState } from 'react';
+import Link from 'next/link';
+import database from '@/db/database.json';
+import { Database, getTitle, Problem } from '@/scripts/helper';
+import { ExternalLinkIcon } from 'lucide-react';
 
+import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
+import { buttonVariants } from '@/components/ui/button';
+import {
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from '@/components/ui/select';
+import {
+	Table,
+	TableBody,
+	TableCell,
+	TableHead,
+	TableHeader,
+	TableRow,
+} from '@/components/ui/table';
 import { ThemeDropdown } from '@/components/theme/theme-dropdown';
 
-export default function Home() {
+export default function Page() {
+	const db = database as unknown as Database;
+
+	const companies = Object.keys(db.companies);
+	const [company, setCompany] = useState(companies[0]);
+
+	const days = Object.keys(db.companies[company]);
+	const [day, setDay] = useState(days[0] ?? '');
+
+	const rows = useMemo(() => {
+		const ids = db.companies[company][day] ?? [];
+
+		return ids?.map((id) => {
+			const p = database.problems[id] as Problem;
+
+			return {
+				slug: p[0],
+				title: getTitle(db, p[0]),
+				difficulty: database.metadata.difficulties[p[1]],
+				acceptance: p[2],
+				tags: p[3]?.map((t) => database.metadata.tags[t]),
+			};
+		});
+	}, [company, day, db]);
+
 	return (
-		<div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-			<div className="absolute top-4 right-4 z-10">
-				<ThemeDropdown />
+		<div className="space-y-6">
+			{/* Sticky Toolbar */}
+			<div className="sticky top-0 z-30 border-b backdrop-blur-xl">
+				<div className="flex items-center justify-between gap-2 p-3">
+					<div className="flex flex-wrap gap-3">
+						<div className="min-w-48 flex-1">
+							<Select
+								value={company}
+								onValueChange={(value) => value && setCompany(value)}
+							>
+								<SelectTrigger className="w-full">
+									<SelectValue placeholder="Company" />
+								</SelectTrigger>
+
+								<SelectContent>
+									{companies?.map((c) => (
+										<SelectItem
+											key={c}
+											value={c}
+										>
+											{c}
+										</SelectItem>
+									))}
+								</SelectContent>
+							</Select>
+						</div>
+
+						<div className="min-w-36 flex-1 sm:w-40 sm:flex-none">
+							<Select
+								value={day}
+								onValueChange={(value) => value && setDay(value)}
+							>
+								<SelectTrigger className="w-full">
+									<SelectValue placeholder="Day" />
+								</SelectTrigger>
+
+								<SelectContent>
+									{days.map((d) => (
+										<SelectItem
+											key={d}
+											value={d}
+										>
+											{d}
+										</SelectItem>
+									))}
+								</SelectContent>
+							</Select>
+						</div>
+					</div>
+
+					<ThemeDropdown />
+				</div>
 			</div>
-			<main className="flex w-full max-w-3xl flex-1 flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-				<Image
-					className="dark:invert"
-					src="/next.svg"
-					alt="Next.js logo"
-					width={100}
-					height={20}
-					priority
-				/>
-				<div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-					<h1 className="max-w-xs text-3xl leading-10 font-semibold tracking-tight text-black dark:text-zinc-50">
-						To get started, edit the page.tsx file.
-					</h1>
-					<p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-						Looking for a starting point or more instructions? Head over to{' '}
-						<a
-							href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-							className="font-medium text-zinc-950 dark:text-zinc-50"
+
+			{/* Table */}
+			<Table>
+				<TableHeader>
+					<TableRow>
+						<TableHead>Title</TableHead>
+						<TableHead>Difficulty</TableHead>
+						<TableHead>Acceptance</TableHead>
+						<TableHead>Tags</TableHead>
+					</TableRow>
+				</TableHeader>
+
+				<TableBody>
+					{rows?.map((problem) => (
+						<TableRow
+							key={problem.slug}
+							className="h-14"
 						>
-							Templates
-						</a>{' '}
-						or the{' '}
-						<a
-							href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-							className="font-medium text-zinc-950 dark:text-zinc-50"
-						>
-							Learning
-						</a>{' '}
-						center.
-					</p>
-				</div>
-				<div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-					<a
-						className="bg-foreground text-background flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 transition-colors hover:bg-[#383838] md:w-39.5 dark:hover:bg-[#ccc]"
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<Image
-							className="dark:invert"
-							src="/vercel.svg"
-							alt="Vercel logomark"
-							width={16}
-							height={16}
-						/>
-						Deploy Now
-					</a>
-					<a
-						className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 md:w-39.5 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-						href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Documentation
-					</a>
-				</div>
-			</main>
+							<TableCell>
+								<div className="flex items-center justify-between gap-4">
+									<span className="font-medium">{problem.title}</span>
+
+									<Link
+										target="_blank"
+										href={`https://leetcode.com/problems/${problem.slug}`}
+										className={cn(
+											buttonVariants({
+												size: 'icon-sm',
+												variant: 'ghost',
+											}),
+										)}
+									>
+										<ExternalLinkIcon />
+									</Link>
+								</div>
+							</TableCell>
+
+							<TableCell>
+								<Badge
+									variant={
+										problem.difficulty.toLowerCase() as
+											'easy' | 'medium' | 'hard'
+									}
+								>
+									{problem.difficulty}
+								</Badge>
+							</TableCell>
+
+							<TableCell>{problem.acceptance}%</TableCell>
+
+							<TableCell>
+								<div className="flex flex-wrap gap-1">
+									{problem.tags.map((t) => (
+										<Badge
+											key={t}
+											variant="secondary"
+										>
+											{t}
+										</Badge>
+									))}
+								</div>
+							</TableCell>
+						</TableRow>
+					))}
+				</TableBody>
+			</Table>
 		</div>
 	);
 }
