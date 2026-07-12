@@ -11,7 +11,7 @@ import {
 
 import { COOKIE_KEYS, useStringCookieState } from '.';
 
-const DEFAULT_VAL = 'b7T2ipqOkq';
+const DEFAULT_VAL = 'b7PaZO816h';
 
 export function useThemePreset() {
 	const { value, setValue, reset } = useStringCookieState<string>(

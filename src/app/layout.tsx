@@ -19,8 +19,6 @@ import '@/styles/fonts.css';
 
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { Provider } from '@/components/providers';
 
@@ -41,8 +39,6 @@ export default function RootLayout({
 		>
 			<body className="font-sans antialiased">
 				<Provider>{children}</Provider>
-				<Analytics />
-				<SpeedInsights />
 			</body>
 		</html>
 	);

@@ -66,7 +66,7 @@ export default function Page() {
 									<SelectValue placeholder="Company" />
 								</SelectTrigger>
 
-								<SelectContent>
+								<SelectContent className="w-full">
 									{companies?.map((c) => (
 										<SelectItem
 											key={c}
@@ -88,7 +88,7 @@ export default function Page() {
 									<SelectValue placeholder="Day" />
 								</SelectTrigger>
 
-								<SelectContent>
+								<SelectContent className="w-full">
 									{days.map((d) => (
 										<SelectItem
 											key={d}
