@@ -9,7 +9,10 @@ import { z } from 'zod';
 
 export const URL_PARAM_KEYS = {
 	DIALOG: {
-		OPEN: 'dpn',
+		NAME: 'dpn',
+	},
+	FILTER: {
+		TABLE: 'ftbl',
 	},
 };
 

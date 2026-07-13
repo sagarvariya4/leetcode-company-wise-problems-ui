@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { FormEvent, useCallback, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { DrawerRootChangeEventDetails } from '@base-ui/react/drawer';
 
@@ -47,21 +47,22 @@ const DIALOG_NAME: DialogName = 'preset';
 
 export function PresetDialog({
 	className,
-	trigger,
-}: React.ComponentProps<typeof Button> & {
-	trigger?: React.ReactElement;
+	TriggerButton,
+}: {
+	className?: string;
+	TriggerButton?: typeof Button;
 }) {
 	const isMobile = useIsMobile();
 	const { dialogName, setDialogName, clearDialogName } = useDialogName();
 	const { presetCode, setPresetCode } = useThemePreset();
-	const [input, setInput] = React.useState(presetCode);
+	const [input, setInput] = useState(presetCode);
 
-	const nextPreset = React.useMemo(() => parsePresetInput(input), [input]);
+	const nextPreset = useMemo(() => parsePresetInput(input), [input]);
 	const isInvalid = input.trim().length > 0 && nextPreset === null;
 
-	const open = React.useMemo(() => dialogName === DIALOG_NAME, [dialogName]);
+	const open = useMemo(() => dialogName === DIALOG_NAME, [dialogName]);
 
-	const onOpenChange = React.useCallback(
+	const onOpenChange = useCallback(
 		// eslint-disable-next-line @typescript-eslint/no-unused-vars, unused-imports/no-unused-vars
 		(open: boolean, eventDetails?: DrawerRootChangeEventDetails) => {
 			if (open) {
@@ -73,8 +74,8 @@ export function PresetDialog({
 		[clearDialogName, setDialogName],
 	);
 
-	const handleSubmit = React.useCallback(
-		(event: React.FormEvent<HTMLFormElement>) => {
+	const handleSubmit = useCallback(
+		(event: FormEvent<HTMLFormElement>) => {
 			event.preventDefault();
 
 			if (!nextPreset) {
@@ -134,7 +135,11 @@ export function PresetDialog({
 				open={open}
 				onOpenChange={onOpenChange}
 			>
-				<DrawerTrigger>{trigger}</DrawerTrigger>
+				{TriggerButton && (
+					<DrawerTrigger>
+						<TriggerButton />
+					</DrawerTrigger>
+				)}
 				<DrawerContent className={cn(className)}>
 					<DrawerHeader>
 						<DrawerTitle className="text-xl">{TITLE}</DrawerTitle>
@@ -167,7 +172,11 @@ export function PresetDialog({
 			open={open}
 			onOpenChange={onOpenChange}
 		>
-			<DialogTrigger>{trigger}</DialogTrigger>
+			{TriggerButton && (
+				<DialogTrigger>
+					<TriggerButton />
+				</DialogTrigger>
+			)}
 			<DialogContent className={cn(className)}>
 				<form onSubmit={handleSubmit}>
 					<DialogHeader>

@@ -1,21 +1,23 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import database from '@/db/database.json';
 import { Database, getTitle, Problem } from '@/scripts/helper';
 import { ExternalLinkIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { useTableFilter } from '@/hooks/url-params/use-table-filter';
 import { Badge } from '@/components/ui/badge';
 import { buttonVariants } from '@/components/ui/button';
 import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-} from '@/components/ui/select';
+	Combobox,
+	ComboboxContent,
+	ComboboxEmpty,
+	ComboboxInput,
+	ComboboxItem,
+	ComboboxList,
+} from '@/components/ui/combobox';
 import {
 	Table,
 	TableBody,
@@ -27,18 +29,28 @@ import {
 import { ThemeDropdown } from '@/components/theme/theme-dropdown';
 
 export default function Page() {
+	const { filter, setFilter } = useTableFilter();
+
 	const db = database as unknown as Database;
 
 	const companies = Object.keys(db.companies);
-	const [company, setCompany] = useState(companies[0]);
 
-	const days = Object.keys(db.companies[company]);
-	const [day, setDay] = useState(days[0] ?? '');
+	const companyExists = companies.includes(filter.company);
+
+	const days = companyExists ? Object.keys(db.companies[filter.company]) : [];
+
+	const dayExists = days.includes(filter.day);
 
 	const rows = useMemo(() => {
-		const ids = db.companies[company][day] ?? [];
+		if (!companyExists || !dayExists) {
+			console.log('companyExists', companyExists);
+			console.log('dayExists', dayExists);
+			return [];
+		}
 
-		return ids?.map((id) => {
+		const ids = db.companies[filter.company][filter.day] ?? [];
+
+		return ids.map((id) => {
 			const p = database.problems[id] as Problem;
 
 			return {
@@ -49,7 +61,7 @@ export default function Page() {
 				tags: p[3]?.map((t) => database.metadata.tags[t]),
 			};
 		});
-	}, [company, day, db]);
+	}, [companyExists, dayExists, filter.company, filter.day, db]);
 
 	return (
 		<div className="space-y-6">
@@ -58,47 +70,59 @@ export default function Page() {
 				<div className="flex items-center justify-between gap-2 p-3">
 					<div className="flex flex-wrap gap-3">
 						<div className="min-w-48 flex-1">
-							<Select
-								value={company}
-								onValueChange={(value) => value && setCompany(value)}
+							<Combobox
+								items={companies}
+								value={filter.company}
+								onValueChange={(company) => {
+									if (company) setFilter('company', company);
+								}}
 							>
-								<SelectTrigger className="w-full">
-									<SelectValue placeholder="Company" />
-								</SelectTrigger>
-
-								<SelectContent className="w-full">
-									{companies?.map((c) => (
-										<SelectItem
-											key={c}
-											value={c}
-										>
-											{c}
-										</SelectItem>
-									))}
-								</SelectContent>
-							</Select>
+								<ComboboxInput
+									placeholder="Select a company"
+									className="w-full"
+								/>
+								<ComboboxContent className="w-full">
+									<ComboboxEmpty>No items found.</ComboboxEmpty>
+									<ComboboxList>
+										{(item) => (
+											<ComboboxItem
+												key={item}
+												value={item}
+											>
+												{item}
+											</ComboboxItem>
+										)}
+									</ComboboxList>
+								</ComboboxContent>
+							</Combobox>
 						</div>
 
 						<div className="min-w-36 flex-1 sm:w-40 sm:flex-none">
-							<Select
-								value={day}
-								onValueChange={(value) => value && setDay(value)}
+							<Combobox
+								items={days}
+								value={filter.day}
+								onValueChange={(day) => {
+									if (day) setFilter('day', day);
+								}}
 							>
-								<SelectTrigger className="w-full">
-									<SelectValue placeholder="Day" />
-								</SelectTrigger>
-
-								<SelectContent className="w-full">
-									{days.map((d) => (
-										<SelectItem
-											key={d}
-											value={d}
-										>
-											{d}
-										</SelectItem>
-									))}
-								</SelectContent>
-							</Select>
+								<ComboboxInput
+									placeholder="Select a day"
+									className="w-full"
+								/>
+								<ComboboxContent className="w-full">
+									<ComboboxEmpty>No items found.</ComboboxEmpty>
+									<ComboboxList>
+										{(item) => (
+											<ComboboxItem
+												key={item}
+												value={item}
+											>
+												{item}
+											</ComboboxItem>
+										)}
+									</ComboboxList>
+								</ComboboxContent>
+							</Combobox>
 						</div>
 					</div>
 

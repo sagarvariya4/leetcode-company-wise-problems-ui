@@ -10,7 +10,7 @@ const DEFAULT_VAL: DialogName = '';
 
 export function useDialogName() {
 	const { value, setValue, clear, reset } = useStringQueryState<DialogName>(
-		URL_PARAM_KEYS.DIALOG.OPEN,
+		URL_PARAM_KEYS.DIALOG.NAME,
 		DEFAULT_VAL,
 	);
 
