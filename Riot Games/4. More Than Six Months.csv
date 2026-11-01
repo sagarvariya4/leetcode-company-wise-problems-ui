@@ -1,0 +1,4 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Better Compression of String,100.0,0.007546553808948004,https://leetcode.com/problems/better-compression-of-string,"Hash Table, String, Sorting, Counting"
+EASY,Teemo Attacking,90.0,0.0058342717875451726,https://leetcode.com/problems/teemo-attacking,"Array, Simulation"
+MEDIUM,Game of Life,90.0,0.007314687986385018,https://leetcode.com/problems/game-of-life,"Array, Matrix, Simulation"

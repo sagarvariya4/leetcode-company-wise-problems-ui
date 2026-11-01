@@ -1,0 +1,12 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Multiply Strings,100.0,0.00448600243287143,https://leetcode.com/problems/multiply-strings,"Math, String, Simulation"
+HARD,Parallel Courses III,90.6,0.00667874352378537,https://leetcode.com/problems/parallel-courses-iii,"Array, Dynamic Programming, Graph Theory, Topological Sort, Directed Acyclic Graph"
+HARD,Word Search II,90.6,0.0039031239842126893,https://leetcode.com/problems/word-search-ii,"Array, String, Backtracking, Trie, Matrix"
+MEDIUM,Random Pick with Weight,81.2,0.004931737212757548,https://leetcode.com/problems/random-pick-with-weight,"Array, Math, Binary Search, Prefix Sum, Randomized"
+HARD,Merge k Sorted Lists,74.5,0.006078443866316191,https://leetcode.com/problems/merge-k-sorted-lists,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort, Tournament Sort"
+MEDIUM,Design Memory Allocator,74.5,0.00510366503208994,https://leetcode.com/problems/design-memory-allocator,"Array, Hash Table, Design, Simulation"
+EASY,Valid Parentheses,74.5,0.004534117415370311,https://leetcode.com/problems/valid-parentheses,"String, Stack, Bracket Sequences"
+MEDIUM,Number of Islands,65.1,0.006531446094380534,https://leetcode.com/problems/number-of-islands,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix"
+MEDIUM,Meeting Rooms II,65.1,0.0052845025342410645,https://leetcode.com/problems/meeting-rooms-ii,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum"
+MEDIUM,House Robber III,65.1,0.005647742314288805,https://leetcode.com/problems/house-robber-iii,"Dynamic Programming, Tree, Depth-First Search, Binary Tree, DP on Trees"
+HARD,Regular Expression Matching,65.1,0.0031989373145868178,https://leetcode.com/problems/regular-expression-matching,"String, Dynamic Programming, Recursion"

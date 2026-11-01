@@ -1,0 +1,8 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+EASY,Two Sum,100.0,0.0058036210674177035,https://leetcode.com/problems/two-sum,"Array, Hash Table"
+EASY,Move Zeroes,79.2,0.0064501338862540695,https://leetcode.com/problems/move-zeroes,"Array, Two Pointers"
+MEDIUM,Reconstruct Original Digits from English,69.2,0.005352585186159716,https://leetcode.com/problems/reconstruct-original-digits-from-english,"Hash Table, Math, String"
+MEDIUM,Spiral Matrix,69.2,0.005814592712981502,https://leetcode.com/problems/spiral-matrix,"Array, Matrix, Simulation"
+MEDIUM,Combination Sum,69.2,0.007727906256510494,https://leetcode.com/problems/combination-sum,"Array, Backtracking"
+MEDIUM,Find First and Last Position of Element in Sorted Array,69.2,0.004980560834808305,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,"Array, Binary Search"
+MEDIUM,Longest Well-Performing Interval,69.2,0.0038464348868136843,https://leetcode.com/problems/longest-well-performing-interval,"Array, Hash Table, Stack, Monotonic Stack, Prefix Sum"

@@ -1,0 +1,4 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+HARD,Minimum Space Wasted From Packaging,100.0,0.0033991092960622437,https://leetcode.com/problems/minimum-space-wasted-from-packaging,"Array, Binary Search, Sorting, Prefix Sum"
+HARD,Trapping Rain Water,84.1,0.006842250693302014,https://leetcode.com/problems/trapping-rain-water,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack"
+HARD,Special Binary String,84.1,0.007941684879036865,https://leetcode.com/problems/special-binary-string,"String, Divide and Conquer, Sorting"

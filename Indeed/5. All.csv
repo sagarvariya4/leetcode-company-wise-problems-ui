@@ -1,0 +1,6 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Sum of Even Numbers After Queries,100.0,0.006914587908317321,https://leetcode.com/problems/sum-of-even-numbers-after-queries,"Array, Simulation"
+EASY,Binary Tree Tilt,97.4,0.006665467567081446,https://leetcode.com/problems/binary-tree-tilt,"Tree, Depth-First Search, Binary Tree, DP on Trees"
+HARD,Minimum Cost to Split an Array,97.4,0.004536763601781871,https://leetcode.com/problems/minimum-cost-to-split-an-array,"Array, Hash Table, Dynamic Programming, Counting"
+MEDIUM,Find Players With Zero or One Losses,97.4,0.007238460271264621,https://leetcode.com/problems/find-players-with-zero-or-one-losses,"Array, Hash Table, Sorting, Counting"
+MEDIUM,Minimum Moves to Equal Array Elements,97.4,0.0059267739242231,https://leetcode.com/problems/minimum-moves-to-equal-array-elements,"Array, Math"

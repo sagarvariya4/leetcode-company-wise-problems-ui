@@ -1,0 +1,12 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+EASY,Valid Palindrome II,100.0,0.004491378326989291,https://leetcode.com/problems/valid-palindrome-ii,"Two Pointers, String, Greedy"
+EASY,Remove All Adjacent Duplicates In String,100.0,0.007427650730177637,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,"String, Stack"
+MEDIUM,Knight Dialer,90.1,0.00622709324845737,https://leetcode.com/problems/knight-dialer,Dynamic Programming
+MEDIUM,Number of Islands,77.9,0.00653144764809101,https://leetcode.com/problems/number-of-islands,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix"
+EASY,Squares of a Sorted Array,77.9,0.007423233652386323,https://leetcode.com/problems/squares-of-a-sorted-array,"Array, Two Pointers, Sorting"
+MEDIUM,Analyze User Website Visit Pattern,77.9,0.004435789256706662,https://leetcode.com/problems/analyze-user-website-visit-pattern,"Array, Hash Table, String, Sorting"
+MEDIUM,Group Anagrams,62.9,0.007344441531412234,https://leetcode.com/problems/group-anagrams,"Array, Hash Table, String, Sorting"
+MEDIUM,Maximal Square,62.9,0.005105154155919983,https://leetcode.com/problems/maximal-square,"Array, Dynamic Programming, Matrix"
+MEDIUM,Meeting Rooms II,62.9,0.0052845025342410645,https://leetcode.com/problems/meeting-rooms-ii,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum"
+MEDIUM,K Closest Points to Origin,62.9,0.006948464732325604,https://leetcode.com/problems/k-closest-points-to-origin,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect, K-D Tree"
+EASY,First Bad Version,62.9,0.004778537705294677,https://leetcode.com/problems/first-bad-version,"Binary Search, Interactive"

@@ -1,0 +1,7 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Beautiful Towers II,100.0,0.003703434358125921,https://leetcode.com/problems/beautiful-towers-ii,"Array, Stack, Monotonic Stack"
+EASY,Two Sum,88.1,0.005803618336750189,https://leetcode.com/problems/two-sum,"Array, Hash Table"
+MEDIUM,Using a Robot to Print the Lexicographically Smallest String,88.1,0.00622391310341025,https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string,"Hash Table, String, Stack, Greedy"
+MEDIUM,Minimum Number of Arrows to Burst Balloons,88.1,0.006202278030366458,https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons,"Array, Greedy, Sorting"
+HARD,Sliding Window Maximum,88.1,0.0049367391489181355,https://leetcode.com/problems/sliding-window-maximum,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query"
+EASY,Count Vowel Substrings of a String,88.1,0.00737415176613257,https://leetcode.com/problems/count-vowel-substrings-of-a-string,"Hash Table, String"

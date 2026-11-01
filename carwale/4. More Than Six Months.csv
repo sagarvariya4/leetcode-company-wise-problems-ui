@@ -1,0 +1,3 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Find Mirror Score of a String,100.0,0.003619794826168426,https://leetcode.com/problems/find-mirror-score-of-a-string,"Hash Table, String, Stack, Simulation"
+EASY,Best Time to Buy and Sell Stock,66.7,0.005752121173271802,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,"Array, Dynamic Programming"

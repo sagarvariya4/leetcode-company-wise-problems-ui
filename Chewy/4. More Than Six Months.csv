@@ -1,0 +1,5 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+EASY,Valid Parentheses,100.0,0.00453411104488547,https://leetcode.com/problems/valid-parentheses,"String, Stack, Bracket Sequences"
+MEDIUM,Top K Frequent Elements,89.6,0.006757410505146042,https://leetcode.com/problems/top-k-frequent-elements,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect"
+MEDIUM,Merge Intervals,89.6,0.005302584099813788,https://leetcode.com/problems/merge-intervals,"Array, Sorting, Quicksort"
+MEDIUM,LRU Cache,89.6,0.004825707154314651,https://leetcode.com/problems/lru-cache,"Hash Table, Linked List, Design, Doubly-Linked List"

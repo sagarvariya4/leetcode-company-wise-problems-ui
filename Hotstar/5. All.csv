@@ -1,0 +1,3 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+HARD,Three Equal Parts,100.0,0.004185813046156655,https://leetcode.com/problems/three-equal-parts,"Array, Math"
+MEDIUM,House Robber,71.0,0.0053686288806417525,https://leetcode.com/problems/house-robber,"Array, Dynamic Programming"

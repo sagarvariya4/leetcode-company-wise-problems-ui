@@ -1,0 +1,10 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Coin Change II,100.0,0.005909031262203358,https://leetcode.com/problems/coin-change-ii,"Array, Dynamic Programming, Knapsack Problem, Complete Knapsack"
+MEDIUM,Spiral Matrix,100.0,0.005814592762393077,https://leetcode.com/problems/spiral-matrix,"Array, Matrix, Simulation"
+MEDIUM,Longest Palindromic Substring,100.0,0.003886670931110418,https://leetcode.com/problems/longest-palindromic-substring,"Two Pointers, String, Dynamic Programming, Manacher"
+MEDIUM,Count Salary Categories,100.0,0.006579920952670503,https://leetcode.com/problems/count-salary-categories,Database
+MEDIUM,Valid Parenthesis String,100.0,0.0042949285386013804,https://leetcode.com/problems/valid-parenthesis-string,"String, Dynamic Programming, Stack, Greedy, Bracket Sequences"
+MEDIUM,Next Permutation,100.0,0.004639579181058852,https://leetcode.com/problems/next-permutation,"Array, Two Pointers"
+EASY,Palindrome Number,100.0,0.0061043582747678385,https://leetcode.com/problems/palindrome-number,Math
+HARD,Trapping Rain Water,100.0,0.006842252605326906,https://leetcode.com/problems/trapping-rain-water,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack"
+MEDIUM,Container With Most Water,100.0,0.006103881799650443,https://leetcode.com/problems/container-with-most-water,"Array, Two Pointers, Greedy"

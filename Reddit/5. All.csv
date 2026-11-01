@@ -1,0 +1,5 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Number of Ways to Buy Pens and Pencils,100.0,0.005727418922540873,https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils,"Math, Enumeration"
+HARD,Word Ladder,89.7,0.004677980030668822,https://leetcode.com/problems/word-ladder,"Hash Table, String, Breadth-First Search, Bidirectional Search"
+MEDIUM,Design Hit Counter,78.6,0.006977334581379982,https://leetcode.com/problems/design-hit-counter,"Array, Binary Search, Design, Queue, Data Stream"
+EASY,Logger Rate Limiter,69.7,0.00769182624217407,https://leetcode.com/problems/logger-rate-limiter,"Hash Table, Design, Data Stream"
