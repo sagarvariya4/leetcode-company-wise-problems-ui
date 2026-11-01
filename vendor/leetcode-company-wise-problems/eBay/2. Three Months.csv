@@ -1,0 +1,4 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Minimize Result by Adding Parentheses to Expression,100.0,0.006865530956157896,https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression,"String, Enumeration"
+MEDIUM,Stepping Numbers,100.0,0.004856868636287765,https://leetcode.com/problems/stepping-numbers,"Math, Backtracking, Breadth-First Search"
+MEDIUM,Merge Intervals,100.0,0.005302558667894053,https://leetcode.com/problems/merge-intervals,"Array, Sorting, Quicksort"

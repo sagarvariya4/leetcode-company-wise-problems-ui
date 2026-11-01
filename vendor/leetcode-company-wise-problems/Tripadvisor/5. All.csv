@@ -1,0 +1,6 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+EASY,Valid Parentheses,100.0,0.004534115794435866,https://leetcode.com/problems/valid-parentheses,"String, Stack, Bracket Sequences"
+EASY,Find Common Characters,89.0,0.00748763267296839,https://leetcode.com/problems/find-common-characters,"Array, Hash Table, String"
+EASY,Ransom Note,69.7,0.006656118581889899,https://leetcode.com/problems/ransom-note,"Hash Table, String, Counting"
+MEDIUM,LRU Cache,61.7,0.00482572276559634,https://leetcode.com/problems/lru-cache,"Hash Table, Linked List, Design, Doubly-Linked List"
+MEDIUM,Min Stack,61.7,0.005879070763921007,https://leetcode.com/problems/min-stack,"Stack, Design"

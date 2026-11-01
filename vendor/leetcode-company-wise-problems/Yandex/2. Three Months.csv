@@ -1,0 +1,12 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+EASY,Valid Palindrome II,100.0,0.004491378326989291,https://leetcode.com/problems/valid-palindrome-ii,"Two Pointers, String, Greedy"
+MEDIUM,Maximize Distance to Closest Person,87.3,0.005014144723563999,https://leetcode.com/problems/maximize-distance-to-closest-person,Array
+MEDIUM,String Compression,87.3,0.0060966499595730425,https://leetcode.com/problems/string-compression,"Two Pointers, String"
+MEDIUM,Longest Subarray of 1's After Deleting One Element,77.2,0.007164373235285464,https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element,"Array, Dynamic Programming, Sliding Window"
+EASY,Longest Strictly Increasing or Strictly Decreasing Subarray,77.2,0.006480134709460145,https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray,Array
+MEDIUM,Find K Closest Elements,77.2,0.0050199877544247155,https://leetcode.com/problems/find-k-closest-elements,"Array, Two Pointers, Binary Search, Sliding Window, Sorting, Heap (Priority Queue)"
+MEDIUM,Insert Delete GetRandom O(1),77.2,0.005556922188537606,https://leetcode.com/problems/insert-delete-getrandom-o1,"Array, Hash Table, Math, Design, Randomized"
+MEDIUM,Longest Repeating Character Replacement,77.2,0.00608767561615917,https://leetcode.com/problems/longest-repeating-character-replacement,"Hash Table, String, Sliding Window"
+MEDIUM,Max Consecutive Ones III,77.2,0.006860492176939046,https://leetcode.com/problems/max-consecutive-ones-iii,"Array, Binary Search, Sliding Window, Prefix Sum"
+MEDIUM,Interval List Intersections,77.2,0.0073251283996731646,https://leetcode.com/problems/interval-list-intersections,"Array, Two Pointers, Sweep Line"
+MEDIUM,Permutation in String,77.2,0.004992714672574866,https://leetcode.com/problems/permutation-in-string,"Hash Table, Two Pointers, String, Sliding Window"

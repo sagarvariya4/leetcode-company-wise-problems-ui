@@ -1,0 +1,13 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Number of Islands,100.0,0.0065314556033623595,https://leetcode.com/problems/number-of-islands,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix"
+MEDIUM,LRU Cache,100.0,0.004825717857259682,https://leetcode.com/problems/lru-cache,"Hash Table, Linked List, Design, Doubly-Linked List"
+MEDIUM,Longest String Chain,92.0,0.0063556855597365946,https://leetcode.com/problems/longest-string-chain,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting"
+HARD,Trapping Rain Water,80.7,0.0068422545178338625,https://leetcode.com/problems/trapping-rain-water,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack"
+HARD,Making A Large Island,80.7,0.0057322229324077755,https://leetcode.com/problems/making-a-large-island,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix"
+MEDIUM,Check if a Parentheses String Can Be Valid,80.7,0.004534403631073088,https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid,"String, Stack, Greedy, Bracket Sequences"
+MEDIUM,Course Schedule II,80.7,0.0056443570037618875,https://leetcode.com/problems/course-schedule-ii,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort"
+MEDIUM,Decode String,80.7,0.006337491124583539,https://leetcode.com/problems/decode-string,"String, Stack, Recursion"
+HARD,Minimum Window Substring,80.7,0.004869702409986858,https://leetcode.com/problems/minimum-window-substring,"Hash Table, String, Sliding Window"
+HARD,Number of Islands II,80.7,0.004078375646795609,https://leetcode.com/problems/number-of-islands-ii,"Array, Hash Table, Union-Find"
+MEDIUM,Rotting Oranges,80.7,0.0059593912733685896,https://leetcode.com/problems/rotting-oranges,"Array, Breadth-First Search, Matrix"
+HARD,Merge k Sorted Lists,80.7,0.006078435671898148,https://leetcode.com/problems/merge-k-sorted-lists,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort, Tournament Sort"

@@ -1,0 +1,13 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+EASY,Two Sum,100.0,0.005803620444467007,https://leetcode.com/problems/two-sum,"Array, Hash Table"
+EASY,Valid Parentheses,88.7,0.0045341167600536315,https://leetcode.com/problems/valid-parentheses,"String, Stack, Bracket Sequences"
+MEDIUM,Number of Islands,76.4,0.006531451498975973,https://leetcode.com/problems/number-of-islands,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix"
+MEDIUM,Container With Most Water,76.4,0.00610389213926025,https://leetcode.com/problems/container-with-most-water,"Array, Two Pointers, Greedy"
+HARD,Trapping Rain Water,66.6,0.006842250693302014,https://leetcode.com/problems/trapping-rain-water,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack"
+MEDIUM,Copy List with Random Pointer,66.6,0.006388446845663478,https://leetcode.com/problems/copy-list-with-random-pointer,"Hash Table, Linked List"
+MEDIUM,LRU Cache,66.6,0.0048257102904015,https://leetcode.com/problems/lru-cache,"Hash Table, Linked List, Design, Doubly-Linked List"
+EASY,Palindrome Number,66.6,0.006104360149806045,https://leetcode.com/problems/palindrome-number,Math
+MEDIUM,Min Stack,66.6,0.005879064995952622,https://leetcode.com/problems/min-stack,"Stack, Design"
+MEDIUM,Maximum Subarray,66.6,0.005399356046205398,https://leetcode.com/problems/maximum-subarray,"Array, Divide and Conquer, Dynamic Programming"
+MEDIUM,Majority Element II,66.6,0.005692215023666439,https://leetcode.com/problems/majority-element-ii,"Array, Hash Table, Sorting, Counting, Boyer–Moore Majority Vote Algorithm"
+MEDIUM,Longest Substring Without Repeating Characters,66.6,0.0040019092798101895,https://leetcode.com/problems/longest-substring-without-repeating-characters,"Hash Table, String, Sliding Window"

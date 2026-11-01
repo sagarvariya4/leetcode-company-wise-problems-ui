@@ -1,0 +1,18 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Implement Trie (Prefix Tree),100.0,0.007017743185296862,https://leetcode.com/problems/implement-trie-prefix-tree,"Hash Table, String, Design, Trie"
+EASY,Intersection of Two Arrays,97.2,0.007849451320121105,https://leetcode.com/problems/intersection-of-two-arrays,"Array, Hash Table, Two Pointers, Binary Search, Sorting"
+MEDIUM,Snapshot Array,97.2,0.0036822698030254102,https://leetcode.com/problems/snapshot-array,"Array, Hash Table, Binary Search, Design, Persistent Data Structure"
+MEDIUM,Word Break,93.9,0.005002409462400433,https://leetcode.com/problems/word-break,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization, Brute-Force Search"
+HARD,Text Justification,85.8,0.00524533758074244,https://leetcode.com/problems/text-justification,"Array, String, Simulation"
+HARD,Convert JSON String to Object,80.4,0.005342752485609629,https://leetcode.com/problems/convert-json-string-to-object,
+MEDIUM,LRU Cache,80.4,0.004825717857259682,https://leetcode.com/problems/lru-cache,"Hash Table, Linked List, Design, Doubly-Linked List"
+MEDIUM,Web Crawler Multithreaded,73.4,0.005149186132689193,https://leetcode.com/problems/web-crawler-multithreaded,"Depth-First Search, Breadth-First Search, Concurrency"
+HARD,Merge k Sorted Lists,73.4,0.006078435671898148,https://leetcode.com/problems/merge-k-sorted-lists,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort, Tournament Sort"
+EASY,Merge Two Binary Trees,63.7,0.007921912871239709,https://leetcode.com/problems/merge-two-binary-trees,"Tree, Depth-First Search, Breadth-First Search, Binary Tree"
+MEDIUM,Stock Price Fluctuation ,63.7,0.004950602398377403,https://leetcode.com/problems/stock-price-fluctuation,"Hash Table, Design, Heap (Priority Queue), Data Stream, Ordered Set"
+HARD,Design Search Autocomplete System,63.7,0.005010240685026614,https://leetcode.com/problems/design-search-autocomplete-system,"String, Depth-First Search, Design, Trie, Sorting, Heap (Priority Queue), Data Stream"
+MEDIUM,Course Schedule II,63.7,0.0056443570037618875,https://leetcode.com/problems/course-schedule-ii,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort"
+MEDIUM,Lowest Common Ancestor of a Binary Tree III,63.7,0.00830308828486254,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii,"Hash Table, Two Pointers, Tree, Binary Tree, Binary Lifting, Lowest Common Ancestor"
+MEDIUM,String Compression,63.7,0.006096667959931202,https://leetcode.com/problems/string-compression,"Two Pointers, String"
+MEDIUM,Clone Graph,63.7,0.006640737804223025,https://leetcode.com/problems/clone-graph,"Hash Table, Depth-First Search, Breadth-First Search, Graph Theory"
+MEDIUM,Time Based Key-Value Store,63.7,0.005025854920509707,https://leetcode.com/problems/time-based-key-value-store,"Hash Table, String, Binary Search, Design"

@@ -1,0 +1,3 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+HARD,Trionic Array II,100.0,0.004714681951659041,https://leetcode.com/problems/trionic-array-ii,"Array, Dynamic Programming"
+MEDIUM,Count Number of Nice Subarrays,88.0,0.007582893273212039,https://leetcode.com/problems/count-number-of-nice-subarrays,"Array, Hash Table, Math, Sliding Window, Prefix Sum"

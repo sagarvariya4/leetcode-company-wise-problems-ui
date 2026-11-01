@@ -1,0 +1,6 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+EASY,Logger Rate Limiter,100.0,0.0076918306066725665,https://leetcode.com/problems/logger-rate-limiter,"Hash Table, Design, Data Stream"
+MEDIUM,Minimum Area Rectangle,92.7,0.005560506180634311,https://leetcode.com/problems/minimum-area-rectangle,"Array, Hash Table, Math, Geometry, Sorting"
+HARD,Russian Doll Envelopes,92.7,0.003833090980833449,https://leetcode.com/problems/russian-doll-envelopes,"Array, Binary Search, Dynamic Programming, Sorting, Longest Increasing Subsequence"
+MEDIUM,LRU Cache,82.5,0.004825722825290219,https://leetcode.com/problems/lru-cache,"Hash Table, Linked List, Design, Doubly-Linked List"
+HARD,Sliding Window Maximum,82.5,0.004936743580253868,https://leetcode.com/problems/sliding-window-maximum,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query"

@@ -1,0 +1,6 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+HARD,Minimum Space Wasted From Packaging,100.0,0.0033991092960622437,https://leetcode.com/problems/minimum-space-wasted-from-packaging,"Array, Binary Search, Sorting, Prefix Sum"
+HARD,LFU Cache,95.6,0.00505129874503289,https://leetcode.com/problems/lfu-cache,"Hash Table, Linked List, Design, Doubly-Linked List"
+HARD,Special Binary String,83.4,0.007941684879036865,https://leetcode.com/problems/special-binary-string,"String, Divide and Conquer, Sorting"
+HARD,Trapping Rain Water,83.4,0.006842250693302014,https://leetcode.com/problems/trapping-rain-water,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack"
+MEDIUM,Unique Paths II,73.7,0.004523934512604255,https://leetcode.com/problems/unique-paths-ii,"Array, Dynamic Programming, Matrix"

@@ -1,0 +1,6 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+HARD,Number of Islands II,100.0,0.004078401223183473,https://leetcode.com/problems/number-of-islands-ii,"Array, Hash Table, Union-Find"
+HARD,Minimum Number of Refueling Stops,100.0,0.004204264247875874,https://leetcode.com/problems/minimum-number-of-refueling-stops,"Array, Dynamic Programming, Greedy, Heap (Priority Queue)"
+HARD,Maximize Sum of Weights after Edge Removals,100.0,0.003351140790205898,https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals,"Dynamic Programming, Tree, Depth-First Search, Sorting"
+HARD,Alien Dictionary,100.0,0.0037362147934449637,https://leetcode.com/problems/alien-dictionary,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Directed Acyclic Graph"
+HARD,Escape the Spreading Fire,100.0,0.003983002832861191,https://leetcode.com/problems/escape-the-spreading-fire,"Array, Binary Search, Breadth-First Search, Matrix"

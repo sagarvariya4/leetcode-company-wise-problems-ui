@@ -1,0 +1,4 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+HARD,Number of Atoms,100.0,0.006527622735185517,https://leetcode.com/problems/number-of-atoms,"Hash Table, String, Stack, Sorting"
+MEDIUM,Sort Colors,78.7,0.007029494532196022,https://leetcode.com/problems/sort-colors,"Array, Two Pointers, Sorting, Quicksort, Bubble Sort"
+EASY,Degree of an Array,78.7,0.005877477814254155,https://leetcode.com/problems/degree-of-an-array,"Array, Hash Table"

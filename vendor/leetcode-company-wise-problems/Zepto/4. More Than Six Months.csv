@@ -1,0 +1,4 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Longest Univalue Path,100.0,0.004460072832776245,https://leetcode.com/problems/longest-univalue-path,"Tree, Depth-First Search, Binary Tree, DP on Trees"
+HARD,Sliding Window Maximum,87.3,0.004936743746762299,https://leetcode.com/problems/sliding-window-maximum,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query"
+MEDIUM,Maximum Width Ramp,77.2,0.005597561225850801,https://leetcode.com/problems/maximum-width-ramp,"Array, Two Pointers, Stack, Monotonic Stack"
